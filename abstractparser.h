@@ -24,15 +24,18 @@ public:
     QVector<QString> getTextOutput() {return outputText;}
     bool errorsHappened() { return lastParseErrors;}
 protected:
-    QVector<bool> idDeclared;
-    QVector<Lexeme> lexList;
-    bool lastParseErrors;
-    QVector<QString> outputText;
-    int nextLexPointer;
-    Lexeme currLexeme;
-    int getToken();
+    QVector<bool> idDeclared;       // объ€влена ли переменна€ [i]
+    QVector<Lexeme> lexList;        // список лексем
+    bool lastParseErrors;           // были ли ошибки
+    bool declaring;                 // происходит ли сейчас объ€вление переменных
+    QVector<QString> outputText;    // вектор сообщений об ошибках
+    int nextLexPointer;             // номер следующей лексемы
+    Lexeme currLexeme;              // текуща€ лексема
+    int getToken();                 // получить новую лескему в currLexeme
 };
 
+
+// »сключени€
 class EndOfLexListReached
 {
 public:

@@ -20,8 +20,6 @@ private:
     int levelLogExpr();
     int levelLogTerm();
     int levelLogMult();
-    bool declaring;
-
 };
 
 #endif // RDPARSER_H

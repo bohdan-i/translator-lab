@@ -9,19 +9,19 @@ AbstractParser::AbstractParser()
 int AbstractParser::getToken()
 {
     // для рекурсивного спуска, надо пофиксить его
-//    if (nextLexPointer>=lexList.size())
+    if (nextLexPointer>=lexList.size())
 //        return -1;
-//        //throw EndOfLexListReached(); //ЧЁ ЗА ЕРЕСЬ?!?!?!?!? не ловит исключения
-//    else currLexeme = lexList[nextLexPointer];
+        throw EndOfLexListReached(); //ЧЁ ЗА ЕРЕСЬ?!?!?!?!? не ловит исключения
+    else currLexeme = lexList[nextLexPointer];
     // для автомата
-    try
-    {
-        currLexeme = lexList[nextLexPointer];
-    }
-    catch(...)
-    {
-        throw EndOfLexListReached();
-    }
+//    try
+//    {
+//        currLexeme = lexList[nextLexPointer];
+//    }
+//    catch(...)
+//    {
+//        throw EndOfLexListReached();
+//    }
 
     nextLexPointer++;
 }
