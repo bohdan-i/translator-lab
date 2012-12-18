@@ -110,7 +110,8 @@ void MainWindow::on_pushButton_clicked() // Начать!111
         ui->errorLog->appendHtml("<b>Scan finished successfully.<\\b>");
 
     // Начнем синтаксический анализ
-    AbstractParser *parser = new RDParser();
+//    AbstractParser *parser = new RDParser();
+    AbstractParser *parser = new AuParser();
     parser->load(mainTableData);
     parser->parse();
     errors = parser->getTextOutput();

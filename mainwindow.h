@@ -7,6 +7,7 @@
 #include <QTextCodec>
 #include "scanner.h"
 #include "rdparser.h"
+#include "auparser.h"
 
 namespace Ui {
 class MainWindow;

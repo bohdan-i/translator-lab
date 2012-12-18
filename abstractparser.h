@@ -37,7 +37,7 @@ class EndOfLexListReached
 {
 public:
     EndOfLexListReached() throw() { }
-    const QString what() {return QString("Reached end of lexeme list.");}
+    const QString what() {return QString("End of program.");}
 };
 
 class InvalidSymbolInOperator
