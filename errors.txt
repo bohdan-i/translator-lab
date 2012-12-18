@@ -1,0 +1,14 @@
+Need ";" at the end of operator.
+Invalid operator.
+"="  is required in assignment.
+"("  is required.
+Must be identier here.
+")" is required.
+"then"  is required.
+"else"  is required.
+";"  is required.
+Identifier is required here.
+Identifier, constant or "(" must start the expression.
+"]" is required.
+Need a sign comparison.
+~
